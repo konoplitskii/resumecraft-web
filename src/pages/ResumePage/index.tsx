@@ -1,0 +1,1 @@
+export const ResumePage = () => <h1>Страница резюме</h1>
