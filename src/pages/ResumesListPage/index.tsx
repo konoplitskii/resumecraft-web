@@ -1,3 +1,23 @@
+import { Button } from "@/shared/ui/button";
+import { toast } from "sonner";
+
 export const ResumesListPage = () => {
-  return <h1>Список резюме</h1>
+  return (
+    <div>
+         <Button
+          variant="outline"
+          onClick={() =>
+            toast("Event has been created", {
+              description: "Sunday, December 03, 2023 at 9:00 AM",
+              action: {
+                label: "Undo",
+                onClick: () => console.log("Undo"),
+              },
+            })
+          }
+    >
+        Show Toast
+    </Button>
+    </div>
+  )
 }

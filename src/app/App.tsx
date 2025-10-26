@@ -1,5 +1,6 @@
 import './index.css';
 import { ResumePage, ResumesListPage } from '@/pages';
+import { Toaster } from '@/shared/ui/sonner';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<ResumesListPage />} />
         <Route path="/resume" element={<ResumePage />} />
       </Routes>
+      <Toaster />
     </BrowserRouter>
   )
 }
