@@ -1,12 +1,12 @@
-import './index.css';
 import { ResumePage, ResumesListPage } from '@/pages';
 import { Toaster } from '@/shared/ui/sonner';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import './index.css';
 
 function App() {
   return (
     <BrowserRouter>
-      <nav style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>
+      <nav style={{ display: 'flex', gap: '10px', marginBottom: '20px' }}>
         <Link to="/">Главная</Link>
         <Link to="/resume">Резюме</Link>
       </nav>
@@ -16,7 +16,7 @@ function App() {
       </Routes>
       <Toaster />
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
